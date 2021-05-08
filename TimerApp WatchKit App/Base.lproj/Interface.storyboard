@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TimerApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer width="136" height="24" alignment="left" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" id="YFn-Qe-Grb"/>
+                        <button width="1" alignment="left" title="START" id="RQe-Jm-MAw">
+                            <connections>
+                                <action selector="startTimer" destination="AgC-eL-Hgc" id="nxj-fH-kID"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="startButton" destination="RQe-Jm-MAw" id="tfi-Tx-DTl"/>
+                        <outlet property="timer" destination="YFn-Qe-Grb" id="ZdE-ZD-eCX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-11" y="-44"/>
+        </scene>
+    </scenes>
+</document>
